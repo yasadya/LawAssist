@@ -849,3 +849,788 @@ footer{background:var(--bg);padding:56px 60px 36px;border-top:1px solid var(--bo
 }
 </style>
 </head>
+
+<body>
+  <!-- ─── NAV ─── -->
+<nav style="position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:300;display:flex;align-items:center;background:rgba(8,12,24,0.88);border:1px solid rgba(255,255,255,0.1);border-radius:100px;backdrop-filter:blur(20px);padding:8px 8px 8px 24px;white-space:nowrap;box-shadow:0 8px 32px rgba(0,0,0,.4)">
+  <div style="font-size:16px;font-weight:800;color:#f0f2ff;letter-spacing:-.5px;margin-right:28px">Law<span style="background:linear-gradient(135deg,#c4b5fd,#f9a8d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Assist</span> Lanka</div>
+  <ul style="display:flex;gap:2px;list-style:none;margin-right:8px">
+    <li><a href="#checker" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.5);text-decoration:none;padding:7px 13px;border-radius:100px;transition:all .2s;display:block" onmouseover="this.style.color='#f0f2ff';this.style.background='rgba(255,255,255,.08)'" onmouseout="this.style.color='rgba(255,255,255,.5)';this.style.background='transparent'">Check My Case</a></li>
+    <li><a href="#categories" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.5);text-decoration:none;padding:7px 13px;border-radius:100px;transition:all .2s;display:block" onmouseover="this.style.color='#f0f2ff';this.style.background='rgba(255,255,255,.08)'" onmouseout="this.style.color='rgba(255,255,255,.5)';this.style.background='transparent'">Law Areas</a></li>
+    <li><a href="#lawyers" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.5);text-decoration:none;padding:7px 13px;border-radius:100px;transition:all .2s;display:block" onmouseover="this.style.color='#f0f2ff';this.style.background='rgba(255,255,255,.08)'" onmouseout="this.style.color='rgba(255,255,255,.5)';this.style.background='transparent'">Find Lawyer</a></li>
+    <li><a href="#guides" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.5);text-decoration:none;padding:7px 13px;border-radius:100px;transition:all .2s;display:block" onmouseover="this.style.color='#f0f2ff';this.style.background='rgba(255,255,255,.08)'" onmouseout="this.style.color='rgba(255,255,255,.5)';this.style.background='transparent'">Guides</a></li>
+    <li><a href="#resources" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.5);text-decoration:none;padding:7px 13px;border-radius:100px;transition:all .2s;display:block" onmouseover="this.style.color='#f0f2ff';this.style.background='rgba(255,255,255,.08)'" onmouseout="this.style.color='rgba(255,255,255,.5)';this.style.background='transparent'">Resources</a></li>
+  </ul>
+  <a href="#emergency" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);color:#fff;padding:9px 20px;border-radius:100px;font-size:12px;font-weight:700;text-decoration:none;transition:all .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Emergency 🚨</a>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-content">
+    <div class="hero-pill">
+      <span class="hero-pill-dot"></span>
+      Free Legal Guidance · Sri Lanka
+    </div>
+    <div class="hero-discover">Discover</div>
+    <h1 class="hero-title">LawAssist</h1>
+    <p class="hero-tagline">The Future of Legal Guidance in Sri Lanka</p>
+    <div class="hero-chips">
+      <div class="hero-chip"><span class="hero-chip-icon">⚖️</span> AI-Powered Analysis</div>
+      <div class="hero-chip"><span class="hero-chip-icon">🔍</span> Know Your Rights</div>
+      <div class="hero-chip"><span class="hero-chip-icon">👨‍⚖️</span> Find the Right Lawyer</div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    SCROLL TO EXPLORE
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+  </div>
+</section>
+
+<!-- ─── MARQUEE ─── -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item">Criminal Law</div>
+    <div class="marquee-item">Family Law</div>
+    <div class="marquee-item">Labour Law</div>
+    <div class="marquee-item">Civil Law</div>
+    <div class="marquee-item">Corporate Law</div>
+    <div class="marquee-item">Cyber Law</div>
+    <div class="marquee-item">Property Law</div>
+    <div class="marquee-item">Sri Lanka Legal Aid</div>
+    <div class="marquee-item">Know Your Rights</div>
+    <div class="marquee-item">Criminal Law</div>
+    <div class="marquee-item">Family Law</div>
+    <div class="marquee-item">Labour Law</div>
+    <div class="marquee-item">Civil Law</div>
+    <div class="marquee-item">Corporate Law</div>
+    <div class="marquee-item">Cyber Law</div>
+    <div class="marquee-item">Property Law</div>
+    <div class="marquee-item">Sri Lanka Legal Aid</div>
+    <div class="marquee-item">Know Your Rights</div>
+  </div>
+</div>
+
+<!-- ─── OVERSIZED TEXT ─── -->
+<section class="oversized-section">
+
+  <!-- Phone centred over giant bleeding text -->
+  <div class="oversized-phone-wrap">
+
+    <!-- Giant text bleeds left & right behind phone -->
+    <div class="oversized-bg-text">Understand Your <em>Rights</em></div>
+
+    <!-- Phone mockup floating in front -->
+    <div class="phone-mockup">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="phone-logo-wrap">
+          <!-- "LA" logo icon -->
+          <div class="phone-logo-icon">
+            <span class="phone-logo-letter">LA</span>
+          </div>
+          <div class="phone-app-name">Law<span>Assist Lanka</span></div>
+          <div class="phone-sub">Legal guidance for every Sri Lankan</div>
+        </div>
+        <div class="phone-divider"></div>
+        <div class="phone-chips">
+          <div class="phone-chip-row"><span class="pcdot" style="background:#f87171"></span>Criminal Law</div>
+          <div class="phone-chip-row"><span class="pcdot" style="background:#60a5fa"></span>Family Law</div>
+          <div class="phone-chip-row"><span class="pcdot" style="background:#4ade80"></span>Labour Law</div>
+          <div class="phone-chip-row"><span class="pcdot" style="background:#a78bfa"></span>Corporate Law</div>
+        </div>
+        <div class="phone-bar"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Sub text and CTAs below -->
+  <p class="oversized-sub">Describe your legal situation in plain language. Our AI-powered checker identifies what area of law it falls under and connects you with the right lawyer — instantly, for free.</p>
+  <div class="oversized-cta-row">
+    <a href="#checker" class="btn-purple">⚖ Check My Situation</a>
+    <a href="#categories" class="btn-ghost">Browse Law Areas</a>
+  </div>
+
+</section>
+
+<!-- ─── CHECKER ─── -->
+<section id="checker">
+  <div class="section-center fade-up">
+    <div class="section-eyebrow">AI-Powered Tool</div>
+    <h2 class="section-title">Legal Situation Checker</h2>
+    <p class="section-sub">Type what happened to you. Our system identifies the law category and recommends the right lawyer.</p>
+  </div>
+  <div class="checker-wrap fade-up">
+    <div class="checker-head">
+      <div class="checker-head-icon">⚖️</div>
+      <div class="checker-head-text">
+        <h3>Describe Your Situation</h3>
+        <p>Be specific — the more detail you provide, the better our analysis.</p>
+      </div>
+    </div>
+    <div class="checker-body">
+      <label class="inp-label" for="situation">What happened?</label>
+      <textarea class="situation-ta" id="situation" placeholder="Example: My employer didn't pay my salary for two months and is now threatening to fire me..."></textarea>
+      <div class="chips-label">Quick examples — click to try:</div>
+      <div class="chips-row">
+        <div class="ex-chip" onclick="fillExample(this)">Landlord won't return deposit</div>
+        <div class="ex-chip" onclick="fillExample(this)">I want a divorce</div>
+        <div class="ex-chip" onclick="fillExample(this)">Someone hacked my account</div>
+        <div class="ex-chip" onclick="fillExample(this)">Employer didn't pay salary</div>
+        <div class="ex-chip" onclick="fillExample(this)">Business contract dispute</div>
+        <div class="ex-chip" onclick="fillExample(this)">I was assaulted</div>
+        <div class="ex-chip" onclick="fillExample(this)">Property boundary dispute</div>
+        <div class="ex-chip" onclick="fillExample(this)">Domestic violence</div>
+      </div>
+      <button class="analyze-btn" id="analyzeBtn" onclick="analyzeSituation()">✦ Analyze My Situation</button>
+      <div class="loading-state" id="loadingState">
+        <div class="spinner"></div>
+        <p>Analyzing your legal situation…</p>
+      </div>
+      <div id="result-area">
+        <div class="result-card">
+          <div class="result-hdr" id="resultHeader"></div>
+          <div class="result-grid" id="resultBody"></div>
+        </div>
+        <div class="disclaimer">⚠️ <strong style="color:rgba(245,158,11,.9)">Disclaimer:</strong> This tool provides general legal information only. Always consult a qualified lawyer before taking legal action.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FEATURE ROWS (nymo style) ─── -->
+<section id="features">
+  <div class="features-inner">
+
+    <div class="feature-row fade-up">
+      <div class="feat-left">
+        <span class="feat-icon">⚖️</span>
+        <h3 class="feat-title">The one-stop for all your legal needs</h3>
+        <p class="feat-desc">Understand your situation instantly. Identify whether your issue is criminal, civil, family, labour, corporate or cyber law — without needing to speak to a lawyer first.</p>
+      </div>
+      <div class="feat-center">
+        <div class="law-visual">
+          <div class="law-visual-icon">⚖️</div>
+          <div class="law-tag-list">
+            <div class="law-tag"><span class="law-tag-name">Criminal Law</span><span class="law-tag-dot" style="background:#f87171"></span></div>
+            <div class="law-tag"><span class="law-tag-name">Family Law</span><span class="law-tag-dot" style="background:#60a5fa"></span></div>
+            <div class="law-tag"><span class="law-tag-name">Labour Law</span><span class="law-tag-dot" style="background:#4ade80"></span></div>
+            <div class="law-tag"><span class="law-tag-name">Civil Law</span><span class="law-tag-dot" style="background:#fbbf24"></span></div>
+            <div class="law-tag"><span class="law-tag-name">Corporate Law</span><span class="law-tag-dot" style="background:#a78bfa"></span></div>
+            <div class="law-tag"><span class="law-tag-name">Cyber Law</span><span class="law-tag-dot" style="background:#2dd4bf"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="feat-right">
+        <span class="feat-icon">✦</span>
+        <h3 class="feat-title">Curated legal guidance, trusted answers</h3>
+        <p class="feat-desc">Our guides are written in plain language so any Sri Lankan can understand their rights — no legal jargon, no confusion.</p>
+      </div>
+    </div>
+
+    <div class="feature-row fade-up">
+      <div class="feat-left">
+        <span class="feat-icon">👨‍⚖️</span>
+        <h3 class="feat-title">Find the right lawyer for your case</h3>
+        <p class="feat-desc">Our directory matches you with verified specialist lawyers by law type and location across Sri Lanka.</p>
+      </div>
+      <div class="feat-center">
+        <div class="law-visual" style="background:linear-gradient(160deg,#0d1120,#161d30)">
+          <span style="font-size:52px;position:relative;z-index:1">🚨</span>
+          <div style="position:relative;z-index:1;text-align:center;padding:0 20px">
+            <div style="font-size:16px;font-weight:700;color:#f0f2ff;margin-bottom:8px">Emergency Guide</div>
+            <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.5">Immediate steps for arrest, domestic violence, workplace exploitation & cybercrime</div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:0 16px;position:relative;z-index:1">
+            <span style="background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.25);border-radius:100px;padding:5px 12px;font-size:10px;font-weight:600;color:#f87171">🚔 Arrested</span>
+            <span style="background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.25);border-radius:100px;padding:5px 12px;font-size:10px;font-weight:600;color:#f87171">🏠 Domestic</span>
+            <span style="background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.25);border-radius:100px;padding:5px 12px;font-size:10px;font-weight:600;color:#f87171">💸 Workplace</span>
+            <span style="background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.25);border-radius:100px;padding:5px 12px;font-size:10px;font-weight:600;color:#f87171">🔐 Cybercrime</span>
+          </div>
+        </div>
+      </div>
+      <div class="feat-right">
+        <span class="feat-icon">📚</span>
+        <h3 class="feat-title">Your AI legal partner</h3>
+        <p class="feat-desc">Describe your situation in plain language and receive instant guidance on your legal category, recommended steps, and who to contact.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ─── DARK CIRCLE SECTION ─── -->
+<section class="circle-section">
+  <div class="circle-bg">
+    <div class="circle-content">
+      <span class="c-icon">⚖️</span>
+      <h3>Know Your Legal Rights in Sri Lanka</h3>
+      <p>Understand the 6 main areas of law — and what to do when things go wrong.</p>
+      <div class="circle-chips">
+        <a href="#categories" class="c-chip">Criminal Law</a>
+        <a href="#categories" class="c-chip">Family Law</a>
+        <a href="#categories" class="c-chip">Labour Law</a>
+        <a href="#categories" class="c-chip">Civil Law</a>
+        <a href="#categories" class="c-chip">Corporate</a>
+        <a href="#categories" class="c-chip">Cyber Law</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CATEGORIES ─── -->
+<section id="categories">
+  <div class="section-center fade-up">
+    <div class="section-eyebrow">Know Your Rights</div>
+    <h2 class="section-title">Areas of Law</h2>
+    <p class="section-sub">Understand the different branches of law and what each one covers.</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card fade-up"><div class="cat-ico">⚔️</div><div class="cat-name">Criminal Law</div><div class="cat-desc">Offences against society or the state — theft, assault, murder, and fraud.</div><div class="cat-tags"><span class="cat-tag">Theft</span><span class="cat-tag">Assault</span><span class="cat-tag">Fraud</span><span class="cat-tag">Drug offences</span></div></div>
+    <div class="cat-card fade-up"><div class="cat-ico">👨‍👩‍👧</div><div class="cat-name">Family Law</div><div class="cat-desc">Marriage, divorce, child custody, adoption, and domestic relations.</div><div class="cat-tags"><span class="cat-tag">Divorce</span><span class="cat-tag">Child custody</span><span class="cat-tag">Adoption</span><span class="cat-tag">Alimony</span></div></div>
+    <div class="cat-card fade-up"><div class="cat-ico">⚖️</div><div class="cat-name">Civil Law</div><div class="cat-desc">Disputes between individuals or organisations — contracts and property.</div><div class="cat-tags"><span class="cat-tag">Contracts</span><span class="cat-tag">Property</span><span class="cat-tag">Negligence</span><span class="cat-tag">Defamation</span></div></div>
+    <div class="cat-card fade-up"><div class="cat-ico">🏗️</div><div class="cat-name">Labour Law</div><div class="cat-desc">Workplace relationships, employment rights, wages and conditions.</div><div class="cat-tags"><span class="cat-tag">Unpaid wages</span><span class="cat-tag">Termination</span><span class="cat-tag">Harassment</span></div></div>
+    <div class="cat-card fade-up"><div class="cat-ico">🏢</div><div class="cat-name">Corporate Law</div><div class="cat-desc">Business operations, company formation, mergers and commercial disputes.</div><div class="cat-tags"><span class="cat-tag">Business disputes</span><span class="cat-tag">Company law</span><span class="cat-tag">IP rights</span></div></div>
+    <div class="cat-card fade-up"><div class="cat-ico">💻</div><div class="cat-name">Cyber Law</div><div class="cat-desc">Internet crimes, data privacy, online fraud and digital offences.</div><div class="cat-tags"><span class="cat-tag">Hacking</span><span class="cat-tag">Online fraud</span><span class="cat-tag">Data theft</span></div></div>
+  </div>
+</section>
+<!-- ─── EMERGENCY ─── -->
+<section id="emergency">
+  <div class="emrg-inner">
+    <div class="emrg-left">
+      <h2>Emergency Legal Guidance</h2>
+      <p>In a crisis? Know who to contact and what steps to take immediately.</p>
+    </div>
+    <div class="emrg-grid">
+      <div class="emrg-card"><div class="emrg-ico">🚔</div><div class="emrg-title">If You Are Arrested</div><div class="emrg-text">Stay calm, do not resist. You have the right to remain silent. Demand to speak with a lawyer before making any statement.</div></div>
+      <div class="emrg-card"><div class="emrg-ico">🏠</div><div class="emrg-title">Domestic Violence</div><div class="emrg-text">Call police (119) immediately. Seek safety first. Contact a family lawyer and women's shelter for protection orders.</div></div>
+      <div class="emrg-card"><div class="emrg-ico">💸</div><div class="emrg-title">Workplace Exploitation</div><div class="emrg-text">Document everything. Contact the Department of Labour. An employment lawyer can help you file a formal complaint.</div></div>
+      <div class="emrg-card"><div class="emrg-ico">🔐</div><div class="emrg-title">Cybercrime / Fraud</div><div class="emrg-text">Report to Sri Lanka CERT. Contact your bank immediately. A cyber law attorney can advise on civil recovery options.</div></div>
+    </div>
+  </div>
+
+  <!-- Legal Aid Commission contact block -->
+  <div class="lac-banner">
+    <div class="lac-pulse">⚖️</div>
+    <div class="lac-text">
+      <h4>Need Free Legal Help? Contact the Legal Aid Commission of Sri Lanka</h4>
+      <p>The LAC provides free legal advice and court representation to low-income individuals (monthly income ≤ Rs.&nbsp;15,000). 77 centres island-wide. Women seeking maintenance are assisted regardless of income. — 129 Hulftsdorp St, Colombo 12.</p>
+    </div>
+    <div class="lac-contacts">
+      <a href="tel:+94115335329" class="lac-number">
+        <span class="lac-num-icon">📞</span>
+        <div><div class="lac-num-val">+94 115 335 329</div><div class="lac-num-lbl">Legal Aid Commission</div></div>
+      </a>
+      <a href="tel:+94115335281" class="lac-number">
+        <span class="lac-num-icon">📞</span>
+        <div><div class="lac-num-val">+94 115 335 281</div><div class="lac-num-lbl">Legal Aid Commission</div></div>
+      </a>
+      <a href="tel:+94112433618" class="lac-number">
+        <span class="lac-num-icon">📞</span>
+        <div><div class="lac-num-val">+94 112 433 618</div><div class="lac-num-lbl">Legal Aid Commission</div></div>
+      </a>
+      <a href="mailto:legalaid@sltnet.lk" class="lac-number">
+        <span class="lac-num-icon">✉️</span>
+        <div><div class="lac-num-val">legalaid@sltnet.lk</div><div class="lac-num-lbl">Email</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── LAWYERS ─── -->
+<section id="lawyers">
+  <div class="section-center fade-up">
+    <div class="section-eyebrow">Lawyer Directory</div>
+    <h2 class="section-title">Find a Specialist</h2>
+    <p class="section-sub">Browse lawyers by their area of specialisation across Sri Lanka.</p>
+  </div>
+  <div class="lawyers-wrap fade-up">
+    <div class="lawyers-head"><span>Lawyer</span><span>Speciality</span><span>Category</span><span>Location</span></div>
+    <div class="lawyer-row"><div class="l-name">Priya Mendis, LLB</div><div class="l-spec">Criminal Defence &amp; Prosecution</div><div><span class="l-badge b-crim">Criminal Law</span></div><div class="l-loc">📍 Colombo 3</div></div>
+    <div class="lawyer-row"><div class="l-name">Anura Perera, LLB</div><div class="l-spec">Divorce, Custody &amp; Matrimonial</div><div><span class="l-badge b-fam">Family Law</span></div><div class="l-loc">📍 Kandy</div></div>
+    <div class="lawyer-row"><div class="l-name">Sumudu Fernando, LLB</div><div class="l-spec">Employment &amp; Labour Rights</div><div><span class="l-badge b-lab">Labour Law</span></div><div class="l-loc">📍 Colombo 7</div></div>
+    <div class="lawyer-row"><div class="l-name">Dinesh Jayawardena</div><div class="l-spec">Civil Disputes &amp; Property</div><div><span class="l-badge b-civ">Civil Law</span></div><div class="l-loc">📍 Galle</div></div>
+    <div class="lawyer-row"><div class="l-name">Kaveesha Rathnayake</div><div class="l-spec">Business Law &amp; Contracts</div><div><span class="l-badge b-corp">Corporate Law</span></div><div class="l-loc">📍 Colombo 1</div></div>
+    <div class="lawyer-row"><div class="l-name">Nalini Dissanayake</div><div class="l-spec">Cybercrime &amp; Data Protection</div><div><span class="l-badge b-cyb">Cyber Law</span></div><div class="l-loc">📍 Colombo 5</div></div>
+  </div>
+</section>
+
+<!-- ─── GUIDES ─── -->
+<section id="guides">
+  <div class="section-center fade-up">
+    <div class="section-eyebrow">Legal Knowledge</div>
+    <h2 class="section-title">Legal Guides</h2>
+    <p class="section-sub">Choose your situation. Get clear steps to take — in plain language.</p>
+  </div>
+
+  <!-- Step indicator -->
+  <div class="guides-stepper fade-up" id="guideStepper">
+    <div class="g-step active" id="gstep1">
+      <div class="g-step-num">1</div>
+      <div class="g-step-label">Choose Category</div>
+      <div class="g-step-line"></div>
+    </div>
+    <div class="g-step" id="gstep2">
+      <div class="g-step-num">2</div>
+      <div class="g-step-label">Select Situation</div>
+      <div class="g-step-line"></div>
+    </div>
+    <div class="g-step" id="gstep3">
+      <div class="g-step-num">3</div>
+      <div class="g-step-label">View Steps</div>
+      <div class="g-step-line"></div>
+    </div>
+  </div>
+
+  <!-- PANE 1: Category selection -->
+  <div class="guide-pane active" id="guidePaneCategories">
+    <div class="gcat-grid">
+      <div class="gcat-card fade-up" onclick="selectGuideCategory('labour')">
+        <span class="gcat-icon">👔</span>
+        <div class="gcat-name">Labour Law</div>
+        <div class="gcat-hint">Wages, employment rights, workplace disputes</div>
+        <div class="gcat-arrow">Explore →</div>
+      </div>
+      <div class="gcat-card fade-up" onclick="selectGuideCategory('family')">
+        <span class="gcat-icon">👨‍👩‍👧</span>
+        <div class="gcat-name">Family Law</div>
+        <div class="gcat-hint">Divorce, custody, domestic matters</div>
+        <div class="gcat-arrow">Explore →</div>
+      </div>
+      <div class="gcat-card fade-up" onclick="selectGuideCategory('criminal')">
+        <span class="gcat-icon">⚔️</span>
+        <div class="gcat-name">Criminal Law</div>
+        <div class="gcat-hint">Arrests, rights, bail, victim support</div>
+        <div class="gcat-arrow">Explore →</div>
+      </div>
+      <div class="gcat-card fade-up" onclick="selectGuideCategory('civil')">
+        <span class="gcat-icon">⚖️</span>
+        <div class="gcat-name">Civil Law</div>
+        <div class="gcat-hint">Property, deposits, tenant rights</div>
+        <div class="gcat-arrow">Explore →</div>
+      </div>
+      <div class="gcat-card fade-up" onclick="selectGuideCategory('cyber')">
+        <span class="gcat-icon">💻</span>
+        <div class="gcat-name">Cyber Law</div>
+        <div class="gcat-hint">Online fraud, hacking, digital crimes</div>
+        <div class="gcat-arrow">Explore →</div>
+      </div>
+      <div class="gcat-card fade-up" onclick="selectGuideCategory('corporate')">
+        <span class="gcat-icon">🏢</span>
+        <div class="gcat-name">Corporate Law</div>
+        <div class="gcat-hint">Contracts, business disputes, partners</div>
+        <div class="gcat-arrow">Explore →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANE 2: Situation selection -->
+  <div class="guide-pane" id="guidePaneSituations">
+    <div class="gsit-header">
+      <button class="gsit-back" onclick="backToCategories()">← Back</button>
+      <div>
+        <div class="gsit-cat-badge" id="gsitBadge"></div>
+        <div class="gsit-title">Select your situation to see what steps to take</div>
+      </div>
+    </div>
+    <div class="gsit-grid" id="gsitGrid"></div>
+  </div>
+</section>
+
+<!-- ─── LEGAL RESOURCES LIBRARY ─── -->
+<section id="resources">
+  <div class="resources-inner">
+    <div class="section-center fade-up">
+      <div class="section-eyebrow">LankaLAW</div>
+      <h2 class="section-title">Legal Resources Library</h2>
+      <p class="section-sub">Browse Acts, Law Reports, Judgements, Constitutions and more — sourced from the official eLaw Library.</p>
+    </div>
+
+    <!-- Tab buttons -->
+    <div class="res-tabs">
+      <button class="res-tab active" onclick="showResTab('acts',this)">Acts &amp; Amendments</button>
+      <button class="res-tab" onclick="showResTab('slr',this)">SL Law Reports</button>
+      <button class="res-tab" onclick="showResTab('nlr',this)">New Law Reports</button>
+      <button class="res-tab" onclick="showResTab('legislation',this)">Legislation</button>
+      <button class="res-tab" onclick="showResTab('courts',this)">Court Judgements</button>
+      <button class="res-tab" onclick="showResTab('other',this)">Other Resources</button>
+    </div>
+
+    <!-- PANEL: Acts & Amendments -->
+    <div class="res-panel active" id="res-acts">
+      <div class="res-year-groups">
+        <div class="res-year-box"><div class="res-year-box-title">1956 – 1965</div><div class="res-year-items"><span class="res-year-item">1956</span><span class="res-year-item">1957</span><span class="res-year-item">1958</span><span class="res-year-item">1959</span><span class="res-year-item">1960</span><span class="res-year-item">1961</span><span class="res-year-item">1962</span><span class="res-year-item">1963</span><span class="res-year-item">1964</span><span class="res-year-item">1965</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">1966 – 1975</div><div class="res-year-items"><span class="res-year-item">1966</span><span class="res-year-item">1967</span><span class="res-year-item">1968</span><span class="res-year-item">1969</span><span class="res-year-item">1970</span><span class="res-year-item">1971</span><span class="res-year-item">1972</span><span class="res-year-item">1973</span><span class="res-year-item">1974</span><span class="res-year-item">1975</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">1976 – 1985</div><div class="res-year-items"><span class="res-year-item">1976</span><span class="res-year-item">1977</span><span class="res-year-item">1978</span><span class="res-year-item">1979</span><span class="res-year-item">1980</span><span class="res-year-item">1981</span><span class="res-year-item">1982</span><span class="res-year-item">1983</span><span class="res-year-item">1984</span><span class="res-year-item">1985</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">1986 – 1995</div><div class="res-year-items"><span class="res-year-item">1986</span><span class="res-year-item">1987</span><span class="res-year-item">1988</span><span class="res-year-item">1989</span><span class="res-year-item">1990</span><span class="res-year-item">1991</span><span class="res-year-item">1992</span><span class="res-year-item">1993</span><span class="res-year-item">1994</span><span class="res-year-item">1995</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">1996 – 2005</div><div class="res-year-items"><span class="res-year-item">1996</span><span class="res-year-item">1997</span><span class="res-year-item">1998</span><span class="res-year-item">1999</span><span class="res-year-item">2000</span><span class="res-year-item">2001</span><span class="res-year-item">2002</span><span class="res-year-item">2003</span><span class="res-year-item">2004</span><span class="res-year-item">2005</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">2006 – 2015</div><div class="res-year-items"><span class="res-year-item">2006</span><span class="res-year-item">2007</span><span class="res-year-item">2008</span><span class="res-year-item">2009</span><span class="res-year-item">2010</span><span class="res-year-item">2011</span><span class="res-year-item">2012</span><span class="res-year-item">2013</span><span class="res-year-item">2014</span><span class="res-year-item">2015</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">2016 – 2025</div><div class="res-year-items"><span class="res-year-item">2016</span><span class="res-year-item">2017</span><span class="res-year-item">2018</span><span class="res-year-item">2019</span><span class="res-year-item">2020</span><span class="res-year-item">2021</span><span class="res-year-item">2022</span><span class="res-year-item">2023</span><span class="res-year-item">2024</span><span class="res-year-item">2025</span></div></div>
+      </div>
+      <div class="res-group" style="margin-top:20px">
+        <div class="res-group-title">Browse by Format</div>
+        <div class="res-enact-grid">
+          <div class="res-enact-card"><div class="res-enact-icon">🔡</div><div class="res-enact-name">Alphabetical Order</div><div class="res-enact-sub">Browse all Acts alphabetically</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📋</div><div class="res-enact-name">Consolidated 2024</div><div class="res-enact-sub">Legislative Enactments</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📋</div><div class="res-enact-name">Consolidated 2006</div><div class="res-enact-sub">Legislative Enactments</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📖</div><div class="res-enact-name">1980 Revised Version</div><div class="res-enact-sub">Legislative Enactments</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📖</div><div class="res-enact-name">1956 Revised Version</div><div class="res-enact-sub">Legislative Enactments</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🏛️</div><div class="res-enact-name">Ceylon 1656 – 1956</div><div class="res-enact-sub">Ceylon Legislative Enactments</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Sri Lanka Law Reports -->
+    <div class="res-panel" id="res-slr">
+      <div class="res-year-groups">
+        <div class="res-year-box"><div class="res-year-box-title">1978 – 1982</div><div class="res-year-items"><span class="res-year-item">1978/79</span><span class="res-year-item">1978/79/80</span><span class="res-year-item">1980</span><span class="res-year-item">1981</span><span class="res-year-item">1982</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">1983 – 1987</div><div class="res-year-items"><span class="res-year-item">1983</span><span class="res-year-item">1984</span><span class="res-year-item">1985</span><span class="res-year-item">1986</span><span class="res-year-item">1987</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">1988 – 1992</div><div class="res-year-items"><span class="res-year-item">1988</span><span class="res-year-item">1989</span><span class="res-year-item">1990</span><span class="res-year-item">1991</span><span class="res-year-item">1992</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">1993 – 1997</div><div class="res-year-items"><span class="res-year-item">1993</span><span class="res-year-item">1994</span><span class="res-year-item">1995</span><span class="res-year-item">1996</span><span class="res-year-item">1997</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">1998 – 2002</div><div class="res-year-items"><span class="res-year-item">1998</span><span class="res-year-item">1999</span><span class="res-year-item">2000</span><span class="res-year-item">2001</span><span class="res-year-item">2002</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">2003 – 2007</div><div class="res-year-items"><span class="res-year-item">2003</span><span class="res-year-item">2004</span><span class="res-year-item">2005</span><span class="res-year-item">2006</span><span class="res-year-item">2007</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">2008 – 2012</div><div class="res-year-items"><span class="res-year-item">2008</span><span class="res-year-item">2009</span><span class="res-year-item">2010</span><span class="res-year-item">2011</span><span class="res-year-item">2012</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">2013 – 2014</div><div class="res-year-items"><span class="res-year-item">2013</span><span class="res-year-item">2014</span><span class="res-year-item">Case Digest</span></div></div>
+      </div>
+      <div class="res-group" style="margin-top:20px">
+        <div class="res-group-title">Other Law Reports</div>
+        <div class="res-enact-grid">
+          <div class="res-enact-card"><div class="res-enact-icon">📚</div><div class="res-enact-name">Ceylon Law Reports</div><div class="res-enact-sub">Historical reports</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📰</div><div class="res-enact-name">Ceylon Law Recorder</div><div class="res-enact-sub">Historical reports</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📑</div><div class="res-enact-name">Ceylon Law Weekly</div><div class="res-enact-sub">Historical reports</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: New Law Reports -->
+    <div class="res-panel" id="res-nlr">
+      <div class="res-year-groups">
+        <div class="res-year-box"><div class="res-year-box-title">Vol 1 – 10</div><div class="res-year-items"><span class="res-year-item">Vol 1</span><span class="res-year-item">Vol 2</span><span class="res-year-item">Vol 3</span><span class="res-year-item">Vol 4</span><span class="res-year-item">Vol 5</span><span class="res-year-item">Vol 6</span><span class="res-year-item">Vol 7</span><span class="res-year-item">Vol 8</span><span class="res-year-item">Vol 9</span><span class="res-year-item">Vol 10</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">Vol 11 – 20</div><div class="res-year-items"><span class="res-year-item">Vol 11</span><span class="res-year-item">Vol 12</span><span class="res-year-item">Vol 13</span><span class="res-year-item">Vol 14</span><span class="res-year-item">Vol 15</span><span class="res-year-item">Vol 16</span><span class="res-year-item">Vol 17</span><span class="res-year-item">Vol 18</span><span class="res-year-item">Vol 19</span><span class="res-year-item">Vol 20</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">Vol 21 – 30</div><div class="res-year-items"><span class="res-year-item">Vol 21</span><span class="res-year-item">Vol 22</span><span class="res-year-item">Vol 23</span><span class="res-year-item">Vol 24</span><span class="res-year-item">Vol 25</span><span class="res-year-item">Vol 26</span><span class="res-year-item">Vol 27</span><span class="res-year-item">Vol 28</span><span class="res-year-item">Vol 29</span><span class="res-year-item">Vol 30</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">Vol 31 – 40</div><div class="res-year-items"><span class="res-year-item">Vol 31</span><span class="res-year-item">Vol 32</span><span class="res-year-item">Vol 33</span><span class="res-year-item">Vol 34</span><span class="res-year-item">Vol 35</span><span class="res-year-item">Vol 36</span><span class="res-year-item">Vol 37</span><span class="res-year-item">Vol 38</span><span class="res-year-item">Vol 39</span><span class="res-year-item">Vol 40</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">Vol 41 – 50</div><div class="res-year-items"><span class="res-year-item">Vol 41</span><span class="res-year-item">Vol 42</span><span class="res-year-item">Vol 43</span><span class="res-year-item">Vol 44</span><span class="res-year-item">Vol 45</span><span class="res-year-item">Vol 46</span><span class="res-year-item">Vol 47</span><span class="res-year-item">Vol 48</span><span class="res-year-item">Vol 49</span><span class="res-year-item">Vol 50</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">Vol 51 – 60</div><div class="res-year-items"><span class="res-year-item">Vol 51</span><span class="res-year-item">Vol 52</span><span class="res-year-item">Vol 53</span><span class="res-year-item">Vol 54</span><span class="res-year-item">Vol 55</span><span class="res-year-item">Vol 56</span><span class="res-year-item">Vol 57</span><span class="res-year-item">Vol 58</span><span class="res-year-item">Vol 59</span><span class="res-year-item">Vol 60</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">Vol 61 – 70</div><div class="res-year-items"><span class="res-year-item">Vol 61</span><span class="res-year-item">Vol 62</span><span class="res-year-item">Vol 63</span><span class="res-year-item">Vol 64</span><span class="res-year-item">Vol 65</span><span class="res-year-item">Vol 66</span><span class="res-year-item">Vol 67</span><span class="res-year-item">Vol 68</span><span class="res-year-item">Vol 69</span><span class="res-year-item">Vol 70</span></div></div>
+        <div class="res-year-box"><div class="res-year-box-title">Vol 71 – 80</div><div class="res-year-items"><span class="res-year-item">Vol 71</span><span class="res-year-item">Vol 72</span><span class="res-year-item">Vol 73</span><span class="res-year-item">Vol 74</span><span class="res-year-item">Vol 75</span><span class="res-year-item">Vol 76</span><span class="res-year-item">Vol 77</span><span class="res-year-item">Vol 78</span><span class="res-year-item">Vol 79/1</span><span class="res-year-item">Vol 79/2</span><span class="res-year-item">Vol 80</span></div></div>
+      </div>
+    </div>
+
+    <!-- PANEL: Legislation -->
+    <div class="res-panel" id="res-legislation">
+      <div class="res-group">
+        <div class="res-group-title">Consolidated Legislations</div>
+        <div class="res-enact-grid">
+          <div class="res-enact-card"><div class="res-enact-icon">📜</div><div class="res-enact-name">Constitution of Sri Lanka</div><div class="res-enact-sub">Current &amp; historical</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📜</div><div class="res-enact-name">Constitution 1978</div><div class="res-enact-sub">Second Republican Constitution</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📜</div><div class="res-enact-name">Constitution 1972</div><div class="res-enact-sub">First Republican Constitution</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🏛️</div><div class="res-enact-name">Donoughmore Commission Report</div><div class="res-enact-sub">Historical report</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🏛️</div><div class="res-enact-name">Soulbury Commission Report</div><div class="res-enact-sub">Historical report</div></div>
+        </div>
+      </div>
+      <div class="res-group">
+        <div class="res-group-title">Core Legislations</div>
+        <div class="res-enact-grid">
+          <div class="res-enact-card"><div class="res-enact-icon">⚖️</div><div class="res-enact-name">Civil Procedure Code</div><div class="res-enact-sub">Civil litigation procedure</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🚔</div><div class="res-enact-name">Criminal Procedure Code</div><div class="res-enact-sub">Criminal litigation procedure</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📕</div><div class="res-enact-name">Penal Code</div><div class="res-enact-sub">Criminal offences</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🔍</div><div class="res-enact-name">Evidence Ordinance</div><div class="res-enact-sub">Rules of evidence</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🏛️</div><div class="res-enact-name">Judicature Acts</div><div class="res-enact-sub">Court structure &amp; jurisdiction</div></div>
+        </div>
+      </div>
+      <div class="res-group">
+        <div class="res-group-title">Subsidiary Legislations</div>
+        <div class="res-enact-grid">
+          <div class="res-enact-card"><div class="res-enact-icon">📰</div><div class="res-enact-name">Gazettes</div><div class="res-enact-sub">Official government notices</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📰</div><div class="res-enact-name">Extraordinary Gazettes</div><div class="res-enact-sub">Special government notices</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📋</div><div class="res-enact-name">Standing Orders</div><div class="res-enact-sub">Parliamentary standing orders</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🏙️</div><div class="res-enact-name">Provincial Council &amp; Local Authority Statutes</div><div class="res-enact-sub">Regional legislation</div></div>
+        </div>
+      </div>
+      <div class="res-group">
+        <div class="res-group-title">Treaties &amp; Conventions</div>
+        <div class="res-enact-grid">
+          <div class="res-enact-card"><div class="res-enact-icon">🌐</div><div class="res-enact-name">International Conventions</div><div class="res-enact-sub">UN &amp; multilateral treaties</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🤝</div><div class="res-enact-name">International Agreements</div><div class="res-enact-sub">Bilateral agreements</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">🌏</div><div class="res-enact-name">Regional Agreements</div><div class="res-enact-sub">SAARC &amp; regional treaties</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">✈️</div><div class="res-enact-name">Extradition Treaties</div><div class="res-enact-sub">Extradition agreements</div></div>
+        </div>
+      </div>
+    </div>
+        <!-- PANEL: Court Judgements -->
+    <div class="res-panel" id="res-courts">
+      <div class="res-group">
+        <div class="res-group-title">Supreme Court Cases</div>
+        <div class="res-enact-grid" style="margin-bottom:14px">
+          <div class="res-enact-card"><div class="res-enact-icon">⚖️</div><div class="res-enact-name">1878 – 2011</div><div class="res-enact-sub">Historical consolidated volume</div></div>
+        </div>
+        <div class="res-year-groups">
+          <div class="res-year-box"><div class="res-year-box-title">2009 – 2016</div><div class="res-year-items"><span class="res-year-item">2009</span><span class="res-year-item">2010</span><span class="res-year-item">2011</span><span class="res-year-item">2012</span><span class="res-year-item">2013</span><span class="res-year-item">2014</span><span class="res-year-item">2015</span><span class="res-year-item">2016</span></div></div>
+          <div class="res-year-box"><div class="res-year-box-title">2017 – 2025</div><div class="res-year-items"><span class="res-year-item">2017</span><span class="res-year-item">2018</span><span class="res-year-item">2019</span><span class="res-year-item">2020</span><span class="res-year-item">2021</span><span class="res-year-item">2022</span><span class="res-year-item">2023</span><span class="res-year-item">2024</span><span class="res-year-item">2025</span></div></div>
+        </div>
+      </div>
+      <div class="res-group">
+        <div class="res-group-title">Appeal Court Cases</div>
+        <div class="res-enact-grid">
+          <div class="res-enact-card"><div class="res-enact-icon">🏛️</div><div class="res-enact-name">1809 – 2011</div><div class="res-enact-sub">Historical consolidated volume</div></div>
+          <div class="res-enact-card"><div class="res-enact-icon">📂</div><div class="res-enact-name">2009 – 2024</div><div class="res-enact-sub">Recent appeal court cases</div></div>
+        </div>
+      </div>
+      <div class="res-group">
+        <div class="res-group-title">High Court Cases</div>
+        <div class="res-enact-grid">
+          <div class="res-enact-card"><div class="res-enact-icon">🏛️</div><div class="res-enact-name">1874 – 1980</div><div class="res-enact-sub">Historical High Court volume</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Other Resources -->
+    <div class="res-panel" id="res-other">
+      <div class="res-enact-grid">
+        <div class="res-enact-card"><div class="res-enact-icon">📖</div><div class="res-enact-name">Acts &amp; Ordinances</div><div class="res-enact-sub">eLaw Library — full catalogue</div></div>
+        <div class="res-enact-card"><div class="res-enact-icon">📋</div><div class="res-enact-name">Legislative Enactments</div><div class="res-enact-sub">eLaw Library — full catalogue</div></div>
+        <div class="res-enact-card"><div class="res-enact-icon">⚖️</div><div class="res-enact-name">Sri Lanka Law Reports</div><div class="res-enact-sub">eLaw Library — full catalogue</div></div>
+        <div class="res-enact-card"><div class="res-enact-icon">📚</div><div class="res-enact-name">New Law Reports</div><div class="res-enact-sub">eLaw Library — full catalogue</div></div>
+        <div class="res-enact-card"><div class="res-enact-icon">🔬</div><div class="res-enact-name">Legal Research Services</div><div class="res-enact-sub">AI-based professional research via LankaLAW</div></div>
+        <div class="res-enact-card"><div class="res-enact-icon">👨‍⚖️</div><div class="res-enact-name">Lawyer Directory</div><div class="res-enact-sub">Retain a lawyer for personal or business advice</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="foot-top">
+    <div>
+      <div class="foot-brand">Law<span>Assist Lanka</span></div>
+      <div class="foot-tag">Helping Sri Lankans understand their legal rights — in plain language, at no cost.</div>
+    </div>
+    <div>
+      <div class="foot-col-title">Services</div>
+      <ul class="foot-links"><li><a href="#checker">Situation Checker</a></li><li><a href="#categories">Law Categories</a></li><li><a href="#lawyers">Find a Lawyer</a></li><li><a href="#guides">Legal Guides</a></li><li><a href="#resources">Legal Library</a></li></ul>
+    </div>
+    <div>
+      <div class="foot-col-title">Law Areas</div>
+      <ul class="foot-links"><li><a href="#">Criminal Law</a></li><li><a href="#">Family Law</a></li><li><a href="#">Labour Law</a></li><li><a href="#">Corporate Law</a></li></ul>
+    </div>
+    <div>
+      <div class="foot-col-title">Emergency</div>
+      <ul class="foot-links"><li><a href="#">Police — 119</a></li><li><a href="#">Legal Aid — 1910</a></li><li><a href="#">Women's Helpline</a></li><li><a href="#">CERT Cybercrime</a></li></ul>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <div class="foot-disc">⚠️ This website provides general legal information only and does not constitute professional legal advice. Always consult a qualified legal professional for your specific situation.</div>
+    <div class="foot-copy">© 2025 LawAssist Lanka</div>
+  </div>
+</footer>
+
+<!-- ─── GUIDE MODAL ─── -->
+<div class="modal-overlay" id="guideModal" onclick="handleOverlayClick(event)">
+  <div class="modal-box">
+    <div class="modal-hdr">
+      <div><div class="m-cat" id="modalCat"></div><div class="m-title" id="modalTitle"></div></div>
+      <button class="m-close" onclick="closeGuide()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">⚠️ This guide provides general legal information only. For your specific situation, always consult a qualified lawyer licensed in Sri Lanka.</div>
+  </div>
+</div>
+
+<script>
+/* ── CLASSIFIER ── */
+const rules=[
+  {kw:['divorce','custody','alimony','spouse','marriage','married','wife','husband','child support','adoption','domestic violence','domestic','matrimonial','separate','separated'],type:'Family Law',issue:'Matrimonial / Family Dispute',lawyer:'👨‍👩‍👧 Family Lawyer',color:'#60a5fa',bg:'rgba(59,130,246,0.15)',icon:'👨‍👩‍👧',step:'Contact a family law attorney. If there is any risk of violence, contact the police (119) immediately and seek a protection order.'},
+  {kw:['salary','wage','pay','employer','fired','termination','terminated','wrongful','workplace','employment','labour','labor','overtime','job','redundancy','hr'],type:'Labour Law',issue:'Employment / Workplace Dispute',lawyer:'👔 Employment Lawyer',color:'#4ade80',bg:'rgba(34,197,94,0.15)',icon:'🏗️',step:'Document all evidence (contracts, payslips, messages). Contact an employment lawyer or file a complaint with the Department of Labour.'},
+  {kw:['hacked','hack','cyber','online fraud','scam','phishing','account stolen','data breach','password','internet crime','digital','extortion online','cyberbullying'],type:'Cyber Law',issue:'Cybercrime / Digital Offence',lawyer:'💻 Cyber Law Attorney',color:'#2dd4bf',bg:'rgba(20,184,166,0.12)',icon:'💻',step:'Report to Sri Lanka CERT and the nearest police station. Contact your bank immediately if financial fraud is involved.'},
+  {kw:['deposit','landlord','rent','tenant','eviction','property','land dispute','boundary','deed','title','house','apartment','lease'],type:'Civil Law',issue:'Property / Civil Dispute',lawyer:'⚖️ Civil Lawyer',color:'#fbbf24',bg:'rgba(245,158,11,0.12)',icon:'⚖️',step:"Send a written demand letter first. If unresolved, consult a civil lawyer about filing in the Magistrates' Court."},
+  {kw:['business','contract','partner','partnership','company','shareholder','breach','agreement','intellectual property','trademark','copyright','supplier','invoice','debt recovery','commercial'],type:'Corporate Law',issue:'Business / Commercial Dispute',lawyer:'🏢 Corporate Lawyer',color:'#a78bfa',bg:'rgba(139,92,246,0.12)',icon:'🏢',step:'Review your contract carefully. A corporate lawyer can advise on breach of contract claims, mediation, or litigation options.'},
+  {kw:['assault','attacked','robbery','theft','stolen','murder','rape','fraud','bribe','bribery','drugs','arrested','crime','criminal','police','harassment','threat','blackmail','kidnap'],type:'Criminal Law',issue:'Criminal Offence / Victim of Crime',lawyer:'⚔️ Criminal Lawyer',color:'#f87171',bg:'rgba(239,68,68,0.15)',icon:'⚔️',step:'Report the crime to the police (119) immediately. If you are the accused, do not make any statement before speaking with a criminal defence lawyer.'}
+];
+
+function classify(t){
+  const l=t.toLowerCase();let best=null,top=0;
+  for(const r of rules){let s=0;for(const k of r.kw)if(l.includes(k))s++;if(s>top){top=s;best=r;}}
+  return best&&top>0?best:{type:'General Legal Matter',issue:'Unclear — further consultation needed',lawyer:'⚖️ General Practitioner',color:'#7c85a8',bg:'rgba(124,133,168,0.15)',icon:'⚖️',step:'Contact the Legal Aid Commission of Sri Lanka or a general practice lawyer for a consultation.'};
+}
+
+function fillExample(el){document.getElementById('situation').value=el.textContent}
+
+function analyzeSituation(){
+  const text=document.getElementById('situation').value.trim();
+  if(!text||text.length<10){const t=document.getElementById('situation');t.style.borderColor='#ef4444';setTimeout(()=>t.style.borderColor='',1500);return;}
+  const btn=document.getElementById('analyzeBtn'),ld=document.getElementById('loadingState'),ra=document.getElementById('result-area');
+  btn.disabled=true;ld.classList.add('visible');ra.classList.remove('visible');
+  setTimeout(()=>{
+    const r=classify(text);
+    document.getElementById('resultHeader').innerHTML=`<div class="result-ico" style="background:${r.bg};font-size:22px">${r.icon}</div><div class="result-meta"><h4 style="color:${r.color}">${r.type}</h4><span>Legal category identified from your description</span></div>`;
+    document.getElementById('resultBody').innerHTML=`<div class="r-item"><div class="r-item-lbl">Possible Legal Issue</div><div class="r-item-val">${r.issue}</div></div><div class="r-item"><div class="r-item-lbl">Recommended Lawyer</div><div class="r-item-val">${r.lawyer}</div></div><div class="r-nextstep"><div class="r-next-arrow">→</div><div class="r-next-txt"><strong>Recommended Next Step</strong>${r.step}</div></div>`;
+    ld.classList.remove('visible');ra.classList.add('visible');btn.disabled=false;
+    ra.scrollIntoView({behavior:'smooth',block:'nearest'});
+  },1400);
+}
+
+document.getElementById('situation').addEventListener('keydown',e=>{if(e.key==='Enter'&&e.ctrlKey)analyzeSituation();});
+
+/* ── GUIDES 3-STEP FLOW ── */
+const guideCategories = {
+  labour: {
+    label: 'Labour Law', icon: '👔',
+    color: '#4ade80', bg: 'rgba(34,197,94,0.12)',
+    situations: [
+      { title: "Employer hasn't paid my salary", desc: "Learn your rights and how to file a complaint with the Department of Labour.", guide: 'labour' },
+      { title: "I was wrongfully terminated", desc: "Understand unlawful dismissal and how to challenge it at the Labour Tribunal.", guide: 'termination' },
+      { title: "Facing workplace harassment", desc: "Steps to document, report, and seek legal protection from workplace abuse.", guide: 'harassment' }
+    ]
+  },
+  family: {
+    label: 'Family Law', icon: '👨‍👩‍👧',
+    color: '#60a5fa', bg: 'rgba(59,130,246,0.12)',
+    situations: [
+      { title: "I want to file for divorce", desc: "Step-by-step guide under General Law, Kandyan Law, and the MMDA.", guide: 'divorce' },
+      { title: "Dispute over child custody", desc: "How courts decide custody and what you can do to protect your child's interests.", guide: 'custody' },
+      { title: "Experiencing domestic violence", desc: "Immediate safety steps, how to obtain a protection order, and legal remedies.", guide: 'domviolence' }
+    ]
+  },
+  criminal: {
+    label: 'Criminal Law', icon: '⚔️',
+    color: '#f87171', bg: 'rgba(239,68,68,0.12)',
+    situations: [
+      { title: "I have been arrested by police", desc: "Know your constitutional rights during arrest, detention and bail.", guide: 'arrest' },
+      { title: "I am a victim of assault", desc: "How to file a police complaint and pursue criminal and civil remedies.", guide: 'assault' },
+      { title: "I need to understand bail", desc: "Bailable vs non-bailable offences, how bail is set, and how to apply.", guide: 'bail' }
+    ]
+  },
+  civil: {
+    label: 'Civil Law', icon: '⚖️',
+    color: '#fbbf24', bg: 'rgba(245,158,11,0.12)',
+    situations: [
+      { title: "Landlord won't return my deposit", desc: "Your rights under the Rent Act and steps to recover your security deposit.", guide: 'deposit' },
+      { title: "Facing illegal eviction", desc: "What notice periods apply and how to challenge an unlawful eviction in court.", guide: 'eviction' },
+      { title: "Neighbour boundary / land dispute", desc: "How to resolve property boundary disputes through mediation or District Court.", guide: 'landdispute' }
+    ]
+  },
+  cyber: {
+    label: 'Cyber Law', icon: '💻',
+    color: '#2dd4bf', bg: 'rgba(20,184,166,0.12)',
+    situations: [
+      { title: "I was scammed online / lost money", desc: "Immediate steps: secure accounts, contact your bank, and report to CERT.", guide: 'cyberfraud' },
+      { title: "Someone hacked my account", desc: "How to reclaim access, preserve evidence, and report to CCID.", guide: 'hacked' },
+      { title: "I'm being cyberbullied or harassed online", desc: "Your rights under the Computer Crimes Act and how to get the content removed.", guide: 'cyberbully' }
+    ]
+  },
+  corporate: {
+    label: 'Corporate Law', icon: '🏢',
+    color: '#a78bfa', bg: 'rgba(139,92,246,0.12)',
+    situations: [
+      { title: "Business partner breached our contract", desc: "How to prove breach, send a demand letter, and seek damages or specific performance.", guide: 'breach' },
+      { title: "I haven't been paid by a client", desc: "Debt recovery steps: demand letter, mediation, and filing in court.", guide: 'debtrecovery' },
+      { title: "I want to dissolve a partnership", desc: "How to legally wind up a business partnership and divide assets.", guide: 'dissolve' }
+    ]
+  }
+};
+
+const guides={
+  labour:{cat:'Labour Law',title:"What to Do If Your Employer Doesn't Pay Your Salary",body:`<h3>Your Rights Under Sri Lankan Labour Law</h3><p>The Wages Boards Ordinance and the Shop and Office Employees Act require employers to pay wages on time. Failure to do so is a criminal offence.</p><h3>Step 1 — Document Everything</h3><ul><li>Your employment contract or letter of appointment</li><li>Payslips from previous months showing the agreed salary</li><li>Bank statements showing missing payments</li><li>WhatsApp, email, or written communications with your employer</li></ul><h3>Step 2 — Raise It Internally First</h3><p>Send a written letter or email to your employer formally requesting the unpaid salary. Keep a copy — this creates a paper trail.</p><div class="m-tip">💡 Send the letter via registered post so you have proof of delivery. Keep the receipt.</div><h3>Step 3 — File a Complaint with the Department of Labour</h3><p>If your employer does not respond within 14 days, visit the nearest Department of Labour office. A labour officer will investigate and mediate.</p><h3>Step 4 — File a Case in the Labour Tribunal</h3><p>If mediation fails, file at the Labour Tribunal — free, no lawyer required. The Tribunal can order full outstanding wages plus compensation.</p><div class="m-warn">⚠️ You must file your claim within one year of the unpaid wages becoming due.</div><h3>Key Contacts</h3><ul><li><strong>Department of Labour:</strong> +94 11 2368 082</li><li><strong>Legal Aid Commission:</strong> 1910</li></ul>`},
+  termination:{cat:'Labour Law',title:'I Was Wrongfully Terminated — What Can I Do?',body:`<h3>What Is Wrongful / Unlawful Termination?</h3><p>Under the Termination of Employment of Workmen (Special Provisions) Act No. 45 of 1971, an employer cannot terminate a worker without valid cause or without following due process. "Workers" are employees earning below a certain wage threshold.</p><h3>Step 1 — Collect Your Evidence</h3><ul><li>Your letter of appointment or employment contract</li><li>The termination letter (if given)</li><li>Any written warnings or HR correspondence</li><li>Payslips and attendance records</li></ul><h3>Step 2 — Write to the Commissioner of Labour</h3><p>File an application with the Commissioner of Labour within 3 months of the termination date. The Commissioner can order reinstatement or compensation.</p><div class="m-tip">💡 If you were verbally dismissed with no letter, send a written request to your employer asking them to confirm the termination in writing.</div><h3>Step 3 — Labour Tribunal</h3><p>If the Commissioner's intervention fails, the matter can be referred to the Labour Tribunal. This process is free for workers.</p><div class="m-warn">⚠️ Time limits are strict — do not delay beyond 3 months from the date of termination.</div><h3>Key Contact</h3><ul><li><strong>Department of Labour:</strong> +94 11 2368 082</li></ul>`},
+  harassment:{cat:'Labour Law',title:'Workplace Harassment — Your Rights and Steps to Take',body:`<h3>What Counts as Workplace Harassment?</h3><p>Workplace harassment includes sexual harassment, bullying, intimidation, unfair treatment, and hostile work environments. Sri Lanka's Penal Code and the Prevention of Domestic Violence Act offer some protections, though no single dedicated workplace harassment law exists.</p><h3>Step 1 — Document Every Incident</h3><ul><li>Record dates, times, locations, and witnesses for each incident</li><li>Save emails, messages, or any written evidence</li><li>Note any HR complaints already made</li></ul><h3>Step 2 — Report Internally</h3><p>Lodge a formal written complaint with your HR department or management. Request a written acknowledgement. If your employer has a grievance procedure, follow it.</p><div class="m-tip">💡 If the harasser IS your manager, report to the next level of management or directly to HR.</div><h3>Step 3 — File with the Department of Labour</h3><p>If internal resolution fails, escalate to the Department of Labour or the National Labour Advisory Council.</p><h3>Step 4 — Criminal Complaint (Sexual Harassment)</h3><p>Sexual harassment is a criminal offence under Section 345 of the Penal Code. You can file a police complaint and the perpetrator can face imprisonment up to 5 years.</p><div class="m-warn">⚠️ Keep copies of all correspondence — they are vital evidence if the matter goes to tribunal or court.</div>`},
+  divorce:{cat:'Family Law',title:'Steps to File for Divorce in Sri Lanka',body:`<h3>Which Law Applies to You?</h3><ul><li><strong>General Law (Roman-Dutch Law)</strong> — Most non-Muslim Sri Lankans</li><li><strong>Kandyan Law</strong> — Kandyan Sinhalese</li><li><strong>Muslim Marriage and Divorce Act (MMDA)</strong> — Muslim marriages</li></ul><h3>Grounds for Divorce (General Law)</h3><ul><li>Adultery</li><li>Malicious desertion (abandonment for at least two years)</li><li>Incurable insanity (married for at least three years)</li><li>Imprisonment for more than five years</li></ul><div class="m-tip">💡 Sri Lanka does not recognise "no-fault" divorce under General Law. You must prove a ground exists.</div><h3>Step 1 — Consult a Family Lawyer</h3><p>Before filing, speak with a family law attorney. They will advise on your grounds and handle child custody, maintenance, and property division.</p><h3>Step 2 — File the Plaint at District Court</h3><p>Your lawyer files a Plaint at the District Court in the district where you or your spouse resides. The court will issue a summons to your spouse.</p><h3>Step 3 — Decree Nisi → Decree Absolute</h3><p>If the court is satisfied the grounds are proven, a Decree Nisi is issued. Three months later, either party may apply for the Decree Absolute, which finalises the divorce.</p><div class="m-warn">⚠️ Child custody, maintenance, and property matters should be resolved alongside the divorce proceedings.</div>`},
+  custody:{cat:'Family Law',title:'Child Custody Disputes in Sri Lanka',body:`<h3>How Do Courts Decide Custody?</h3><p>Sri Lankan courts apply the paramount principle — the best interests of the child. Factors considered include the child's age, health, emotional ties with each parent, stability of each home, and the child's own wishes (if old enough).</p><h3>Step 1 — Consult a Family Lawyer Immediately</h3><p>If your spouse has taken the child without consent, this can amount to abduction. Seek emergency legal advice immediately.</p><h3>Step 2 — File a Custody Application</h3><p>File an application in the District Court. The court may appoint a Guardian ad Litem (independent representative for the child) to assess the situation.</p><div class="m-tip">💡 Courts generally award custody of young children to the mother, but this is not an absolute rule — the child's welfare is always the primary test.</div><h3>Step 3 — Interim Custody Order</h3><p>While proceedings are ongoing, you can apply for an Interim Custody Order to ensure the child remains in a safe and stable environment.</p><h3>Step 4 — Maintenance</h3><p>Regardless of who has custody, both parents are legally required to contribute to the child's maintenance under the Maintenance Ordinance.</p><div class="m-warn">⚠️ Never withhold the other parent's court-ordered access rights — this can be held against you in proceedings.</div>`},
+  domviolence:{cat:'Family Law',title:'Experiencing Domestic Violence — Immediate Steps',body:`<h3>Your Safety Comes First</h3><p>If you are in immediate danger, call Police Emergency: <strong>119</strong> right now.</p><h3>Step 1 — Get to Safety</h3><p>Leave the situation if it is safe to do so. Contact a trusted person, women's shelter, or call the Women In Need (WIN) hotline: <strong>011 2694 893</strong>.</p><h3>Step 2 — File a Police Report</h3><p>Go to your nearest police station and file a complaint. Domestic violence is a criminal offence. Ask specifically for a Women & Children's Bureau officer.</p><div class="m-tip">💡 Photograph all injuries immediately. Medical records and photographs are powerful evidence.</div><h3>Step 3 — Apply for a Protection Order</h3><p>Under the Prevention of Domestic Violence Act No. 34 of 2005, you can apply for a Protection Order at the Magistrates' Court. This legally bars the abuser from approaching or contacting you.</p><h3>Step 4 — Interim Order</h3><p>You can apply for an Interim Protection Order on the same day, even without the other party present, if you are in immediate danger.</p><div class="m-warn">⚠️ Violation of a Protection Order is a criminal offence punishable by up to 3 years imprisonment.</div><h3>Key Contacts</h3><ul><li><strong>Police Emergency:</strong> 119</li><li><strong>Women In Need (WIN):</strong> 011 2694 893</li><li><strong>Legal Aid Commission:</strong> 1910</li></ul>`},
+  arrest:{cat:'Criminal Law',title:'Your Rights When Arrested in Sri Lanka',body:`<h3>Your Fundamental Rights</h3><p>Article 13 of the Constitution guarantees that no person shall be arrested except according to procedure established by law.</p><h3>What Police Can and Cannot Do</h3><p>Police may arrest you with a warrant, or without one if they witness an offence. Police <strong>cannot</strong>:</p><ul><li>Detain you beyond 24 hours without producing you before a Magistrate</li><li>Use excessive force during arrest</li><li>Deny you the right to contact a lawyer</li><li>Coerce or torture a confession</li></ul><div class="m-warn">⚠️ Any confession obtained through torture is inadmissible in court. Report mistreatment to the Human Rights Commission.</div><h3>Your Right to Remain Silent</h3><p>You are not obligated to answer police questions. Politely state: "I wish to remain silent and speak with my lawyer first." Do not sign any statement without legal advice.</p><div class="m-tip">💡 <strong>Legal Aid Commission:</strong> Call 1910 for free legal assistance.</div><h3>Bail</h3><p>For bailable offences, you are entitled to bail at the police station. For non-bailable offences, bail can only be granted by a Magistrate or higher court.</p><h3>If Your Rights Are Violated</h3><ul><li>File a Fundamental Rights application in the Supreme Court within one month</li><li>Complain to the National Police Commission</li><li>Report to the Human Rights Commission: 011 2694 925</li></ul>`},
+  assault:{cat:'Criminal Law',title:'I Was Assaulted — Steps to Take',body:`<h3>Immediately After the Assault</h3><ul><li>Get to safety and seek medical attention at once</li><li>Do not wash yourself or change clothes if evidence might be preserved</li><li>Photograph all injuries as soon as possible</li></ul><h3>Step 1 — File a Police Complaint (B Report)</h3><p>Go to the nearest police station and file a complaint immediately. Ask for a copy of the First Information Report (FIR) or the "B Report." The police must investigate.</p><div class="m-tip">💡 If the police are uncooperative, you can file a private complaint directly with the Magistrates' Court.</div><h3>Step 2 — Obtain a Medical Report</h3><p>Visit a government hospital and ask for a medico-legal examination. This report is crucial evidence in any criminal or civil case.</p><h3>Step 3 — Criminal Prosecution</h3><p>The police are responsible for prosecuting the assault as a criminal matter. Simple assault is punishable under Sections 341–347 of the Penal Code.</p><h3>Step 4 — Civil Action for Damages</h3><p>Alongside the criminal case, you can file a civil action in the District Court for compensation for pain, suffering, medical costs, and loss of income.</p><div class="m-warn">⚠️ Do not delay filing the police complaint — delays can be used to challenge the credibility of your evidence.</div>`},
+  bail:{cat:'Criminal Law',title:'Understanding Bail in Sri Lanka',body:`<h3>What Is Bail?</h3><p>Bail is a legal process that allows an accused person to be released from custody before or during trial, subject to conditions set by the court.</p><h3>Bailable vs Non-Bailable Offences</h3><ul><li><strong>Bailable offences:</strong> You are entitled to bail as a right — the police or court must grant it.</li><li><strong>Non-bailable offences:</strong> Bail is at the court's discretion. Only a Magistrate or higher court can grant bail.</li></ul><h3>How Bail Is Set</h3><p>The court considers the seriousness of the offence, flight risk, potential danger to the public, and the accused's ties to the community. Bail may include financial sureties (guarantors who pledge an amount) and conditions like surrendering your passport.</p><div class="m-tip">💡 A lawyer can make a strong bail application at the first court appearance. Do not appear without legal representation.</div><h3>How to Apply</h3><ul><li>Your lawyer files a bail application at the Magistrates' Court at the first appearance</li><li>If bail is refused, you can re-apply to the High Court</li><li>If still refused, an appeal can be made to the Court of Appeal</li></ul><div class="m-warn">⚠️ Violating bail conditions is a criminal offence that can result in immediate arrest and remand.</div><h3>Key Contact</h3><ul><li><strong>Legal Aid Commission (free lawyers):</strong> 1910</li></ul>`},
+  deposit:{cat:'Civil Law',title:'How to Recover a Security Deposit from Your Landlord',body:`<h3>What Does the Law Say?</h3><p>The Rent Act No. 7 of 1972 and general contract law principles require a security deposit to be returned when the tenancy ends, minus legitimate deductions for actual damage.</p><h3>Step 1 — Document the Property's Condition</h3><p>Before vacating, take dated photographs and videos of every room. Do a formal check-out inspection with your landlord present.</p><div class="m-tip">💡 Get the landlord to sign a condition report. This is your strongest evidence.</div><h3>Step 2 — Send a Written Demand Letter</h3><p>Write a formal letter demanding return of the deposit within 14 days. State the amount and date paid. Send by registered post and keep the receipt.</p><h3>Step 3 — Attempt Mediation</h3><p>File for free mediation at your local Mediation Board. For disputes under Rs. 500,000, this step may be required before going to court.</p><h3>Step 4 — File in the Magistrates' Court</h3><p>If mediation fails, file a claim in the Magistrates' Court or District Court. You can claim the deposit plus interest and court costs.</p><div class="m-warn">⚠️ Without documentation (receipts, rental agreement, correspondence), recovery becomes very difficult.</div>`},
+  eviction:{cat:'Civil Law',title:'Facing Illegal Eviction — Know Your Rights',body:`<h3>Can a Landlord Just Evict You?</h3><p>No. Under the Rent Act No. 7 of 1972, a landlord cannot evict a tenant without a court order, even if the rent is unpaid. Changing locks, removing belongings, or cutting utilities without a court order is illegal.</p><h3>Step 1 — Know Your Notice Period</h3><p>Your landlord must give written notice. The required notice period depends on your rental agreement and tenancy type. A lawyer can advise on your specific situation.</p><div class="m-tip">💡 Even if notice has been given, a court order is still required to physically evict you. You do not have to leave until then.</div><h3>Step 2 — If You Have Been Locked Out</h3><p>This is an illegal act. Contact the police (119) immediately. You can also file an emergency application in the Magistrates' Court for restoration of possession.</p><h3>Step 3 — Contest the Eviction in Court</h3><p>If your landlord files an eviction case in the District Court or Rent Board, you have the right to appear and contest it. Seek legal representation.</p><div class="m-warn">⚠️ If there is a legitimate dispute about rent arrears, try to settle it — courts are less sympathetic to tenants who have genuinely not paid rent.</div>`},
+  landdispute:{cat:'Civil Law',title:'Resolving a Neighbour / Land Boundary Dispute',body:`<h3>Common Causes of Boundary Disputes</h3><ul><li>Old surveys that conflict with new ones</li><li>Unclear or missing deed descriptions</li><li>Encroachment by a building, wall, or fence</li><li>Inherited property with undivided shares</li></ul><h3>Step 1 — Get a Licensed Surveyor</h3><p>Commission a licensed Land Surveyor to conduct an official survey and produce a plan. This is the foundation of any legal claim.</p><div class="m-tip">💡 Check the survey plan at the Survey Department and compare with the registered deeds of both properties.</div><h3>Step 2 — Mediation Board</h3><p>Land disputes under certain thresholds must go through the Mediation Board before proceeding to court. This is free and often faster than litigation.</p><h3>Step 3 — File at the District Court</h3><p>If mediation fails, file a civil action at the District Court for declaration of title and / or an injunction to stop any encroachment. A civil lawyer who specialises in property is essential.</p><div class="m-warn">⚠️ Do not attempt to physically remove any structure yourself — this can lead to criminal charges against you.</div>`},
+  cyberfraud:{cat:'Cyber Law',title:"What to Do If You're a Victim of Online Fraud",body:`<h3>Act Immediately</h3><p>Time is critical. The faster you act, the higher the chance of recovering funds and identifying the perpetrator.</p><h3>Step 1 — Secure Your Accounts</h3><ul><li>Change passwords on all compromised accounts immediately</li><li>Enable two-factor authentication everywhere</li><li>Remove any unauthorised linked apps or devices</li></ul><h3>Step 2 — Contact Your Bank</h3><p>Call your bank's fraud hotline immediately. Request a transaction freeze or chargeback. Act within hours.</p><div class="m-warn">⚠️ Do NOT transfer more money to "recover" lost funds. This is a common second-stage scam.</div><h3>Step 3 — Report to Sri Lanka CERT</h3><p>Report at <strong>www.cert.gov.lk</strong> or call <strong>+94 11 2691 692</strong>. Provide screenshots, transaction records, and all correspondence with the fraudster.</p><h3>Step 4 — File a Police Report</h3><p>File a complaint at your nearest police station. The Computer Crime Investigation Division (CCID) handles cybercrime.</p><div class="m-tip">💡 <strong>CCID Hotline:</strong> +94 11 2326 977. Preserve all digital evidence before reporting.</div>`},
+  hacked:{cat:'Cyber Law',title:'My Account Was Hacked — Steps to Take',body:`<h3>Act Fast — Every Minute Counts</h3><p>The sooner you act, the less damage can be done with your compromised account or data.</p><h3>Step 1 — Reclaim Access</h3><ul><li>Use the platform's "Forgot Password" / account recovery option immediately</li><li>Enable two-factor authentication once back in</li><li>Check and revoke all active sessions and connected third-party apps</li></ul><h3>Step 2 — Contain the Damage</h3><ul><li>Inform your contacts that your account was compromised (hackers often impersonate victims)</li><li>Change your email password — especially if linked to the hacked account</li><li>Check whether banking or payment apps were connected</li></ul><div class="m-tip">💡 Check haveibeenpwned.com to see if your email appeared in a known data breach.</div><h3>Step 3 — Report to CERT and Police</h3><p>Report the hacking to Sri Lanka CERT: <strong>+94 11 2691 692</strong> or <strong>www.cert.gov.lk</strong>. File a police report with the CCID: <strong>+94 11 2326 977</strong>. Provide all evidence — screenshots, device logs, and dates.</p><h3>Step 4 — Legal Action</h3><p>Under the Computer Crimes Act No. 24 of 2007, unauthorised access to computer systems carries penalties of up to 3 years imprisonment. A cyber law attorney can advise on civil recovery.</p><div class="m-warn">⚠️ Preserve all evidence before changing passwords or devices if a police report is planned.</div>`},
+  cyberbully:{cat:'Cyber Law',title:'Being Cyberbullied or Harassed Online — What to Do',body:`<h3>You Have Legal Protection</h3><p>Online harassment and cyberbullying are addressed under the Computer Crimes Act No. 24 of 2007 and the Penal Code. You do not have to tolerate it.</p><h3>Step 1 — Document Everything</h3><ul><li>Take screenshots of all messages, posts, or content with timestamps</li><li>Note the platforms involved and the usernames or accounts used</li><li>Do not delete messages — they are evidence</li></ul><h3>Step 2 — Report on the Platform</h3><p>Use the platform's reporting tools (Facebook, Instagram, TikTok, etc.) to report the content. Platforms are required to respond to credible reports of harassment.</p><div class="m-tip">💡 Also request the content be removed. Platforms often act faster when law enforcement involvement is mentioned.</div><h3>Step 3 — Report to CERT and Police</h3><p>File a complaint with Sri Lanka CERT (<strong>www.cert.gov.lk</strong>) and the nearest police station. The CCID investigates online harassment cases.</p><h3>Step 4 — Apply for a Protection Order</h3><p>If you know or can identify the person harassing you, your lawyer can apply to the Magistrates' Court for a protection order barring further contact.</p><div class="m-warn">⚠️ If the harassment involves sexual content or threats of violence, escalate to police immediately — do not wait.</div>`},
+  breach:{cat:'Corporate Law',title:'When a Business Partner Breaches a Contract',body:`<h3>What Constitutes a Breach?</h3><p>A breach occurs when one party fails, without lawful excuse, to perform their obligations. Under Sri Lankan law, this can be late performance, defective performance, or anticipatory breach.</p><div class="m-tip">💡 If your contract has an arbitration clause, you are generally required to go to arbitration before court.</div><h3>Step 1 — Review Your Contract</h3><p>Re-read the agreement carefully. Identify exactly which clause was breached and any time limits for claiming.</p><h3>Step 2 — Send a Letter of Demand (Mora Notice)</h3><p>Send a formal demand letter specifying the breach, demanding performance or payment within 14–30 days, and stating legal action will follow.</p><h3>Step 3 — Attempt Mediation or Arbitration</h3><p>Commercial disputes are often resolved faster through mediation or arbitration. The Sri Lanka National Arbitration Centre handles commercial disputes.</p><h3>Step 4 — File a Civil Action</h3><p>Your remedies may include specific performance, damages, or cancellation and restitution.</p><div class="m-warn">⚠️ The limitation period for contract claims in Sri Lanka is generally three years. Do not delay.</div>`},
+  debtrecovery:{cat:'Corporate Law',title:'A Client Hasn\'t Paid Me — How to Recover the Debt',body:`<h3>Your Rights as a Creditor</h3><p>Under Sri Lankan contract law, a client who fails to pay for goods or services delivered is in breach of contract and you are entitled to recover the amount owed.</p><h3>Step 1 — Send a Formal Demand Letter</h3><p>Before going to court, send a clear written demand stating the amount owed, the due date, and a deadline (typically 14–30 days) to pay or face legal action. Send it by registered post.</p><div class="m-tip">💡 A demand letter on a lawyer's letterhead is often enough to prompt payment without going to court.</div><h3>Step 2 — Small Claims or District Court</h3><ul><li><strong>Below Rs. 1,500,000:</strong> File in the Primary Court or Magistrates' Court</li><li><strong>Above Rs. 1,500,000:</strong> File in the District Court</li></ul><p>You can claim the principal amount, interest, and legal costs.</p><h3>Step 3 — Enforcement of Judgment</h3><p>Once judgment is obtained, you can enforce it by seizing and auctioning the debtor's assets through the court's execution process.</p><div class="m-warn">⚠️ Always have a paper trail — invoices, purchase orders, delivery confirmations, and emails are essential evidence.</div>`},
+  dissolve:{cat:'Corporate Law',title:'Dissolving a Business Partnership in Sri Lanka',body:`<h3>How Is a Partnership Ended?</h3><p>A partnership in Sri Lanka is governed by the Partnership Ordinance (Cap. 116). It can be dissolved by agreement, expiry of term, death of a partner, insolvency, or a court order.</p><h3>Step 1 — Check Your Partnership Agreement</h3><p>Your partnership deed should outline the dissolution procedure. Follow it precisely. If no deed exists, the Partnership Ordinance's default rules apply.</p><div class="m-tip">💡 Even if relations have broken down, a mutual deed of dissolution signed by all partners is the cleanest outcome — it avoids expensive litigation.</div><h3>Step 2 — Windng Up Affairs</h3><ul><li>Complete or transfer all pending contracts and obligations</li><li>Collect all outstanding debts owed to the partnership</li><li>Pay all creditors from partnership assets</li><li>Distribute the remaining assets to partners in proportion to their shares</li></ul><h3>Step 3 — Court-Ordered Dissolution</h3><p>If a partner refuses to cooperate, any partner may apply to the District Court for a dissolution order. Grounds include misconduct, persistent breach of the agreement, or making the business impractical to carry on.</p><div class="m-warn">⚠️ Ensure all bank mandates, supplier accounts, and registrations (e.g., with the Inland Revenue) are properly cancelled after dissolution.</div>`}
+};
+
+function selectGuideCategory(catKey) {
+  const cat = guideCategories[catKey];
+  if (!cat) return;
+
+  // Update stepper
+  document.getElementById('gstep1').classList.remove('active');
+  document.getElementById('gstep1').classList.add('done');
+  document.getElementById('gstep2').classList.add('active');
+
+  // Set badge
+  const badge = document.getElementById('gsitBadge');
+  badge.innerHTML = `<span style="font-size:18px">${cat.icon}</span><span style="font-weight:700;color:${cat.color}">${cat.label}</span>`;
+  badge.style.background = cat.bg;
+  badge.style.border = `1px solid ${cat.color}33`;
+  badge.style.borderRadius = '100px';
+
+  // Build situation cards
+  const grid = document.getElementById('gsitGrid');
+  grid.innerHTML = cat.situations.map((s, i) => `
+    <div class="gsit-card" onclick="openGuide('${s.guide}')">
+      <div class="gsit-num">${String(i+1).padStart(2,'0')}</div>
+      <div class="gsit-situ">${s.title}</div>
+      <div class="gsit-desc">${s.desc}</div>
+      <div class="gsit-cta">View Steps →</div>
+    </div>
+  `).join('');
+
+  // Show pane 2
+  document.getElementById('guidePaneCategories').classList.remove('active');
+  document.getElementById('guidePaneSituations').classList.add('active');
+
+  document.getElementById('guides').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function backToCategories() {
+  document.getElementById('gstep1').classList.add('active');
+  document.getElementById('gstep1').classList.remove('done');
+  document.getElementById('gstep2').classList.remove('active');
+  document.getElementById('gstep3').classList.remove('active','done');
+
+  document.getElementById('guidePaneSituations').classList.remove('active');
+  document.getElementById('guidePaneCategories').classList.add('active');
+}
+
+function openGuide(key){
+  const g=guides[key];if(!g)return;
+
+  // Advance stepper to step 3
+  document.getElementById('gstep2').classList.remove('active');
+  document.getElementById('gstep2').classList.add('done');
+  document.getElementById('gstep3').classList.add('active');
+
+  document.getElementById('modalCat').textContent=g.cat;
+  document.getElementById('modalTitle').textContent=g.title;
+  document.getElementById('modalBody').innerHTML=g.body;
+  const o=document.getElementById('guideModal');
+  o.classList.add('open');document.body.style.overflow='hidden';o.scrollTop=0;
+}
+function closeGuide(){
+  document.getElementById('guideModal').classList.remove('open');
+  document.body.style.overflow='';
+
+  // Return stepper to step 2 state
+  document.getElementById('gstep3').classList.remove('active');
+  document.getElementById('gstep2').classList.remove('done');
+  document.getElementById('gstep2').classList.add('active');
+}
+function handleOverlayClick(e){if(e.target===document.getElementById('guideModal'))closeGuide();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeGuide();});
+
+/* ── SCROLL ANIMATIONS ── */
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.08});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+/* ── RESOURCES TABS ── */
+function showResTab(id, btn) {
+  document.querySelectorAll('.res-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.res-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('res-'+id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
