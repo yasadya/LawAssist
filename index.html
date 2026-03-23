@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LawAssist Lanka — Legal Situation Checker</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#080c18;
+  --bg2:#0d1120;
+  --bg3:#111628;
+  --navy:#131826;
+  --card:#161d30;
+  --card2:#1c243a;
+  --bord:rgba(255,255,255,0.07);
+  --bord2:rgba(255,255,255,0.12);
+  --txt:#f0f2ff;
+  --muted:#7c85a8;
+  --muted2:#3d4560;
+  --purple:#8b5cf6;
+  --purple2:#a78bfa;
+  --purple3:#6d28d9;
+  --lilac:#c4b5fd;
+  --pink:#f472b6;
+  --grad:linear-gradient(135deg,#8b5cf6,#ec4899);
+  --gradtxt:linear-gradient(135deg,#c4b5fd 0%,#f9a8d4 100%);
+  --red:#ef4444;
+  --green:#22c55e;
+  --blue:#3b82f6;
+  --gold:#f59e0b;
+}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#2a3050;border-radius:2px}
+
+/* ─── HERO ─── */
+#hero{
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  padding:120px 24px 100px;
+  text-align:center;
+}
+
+/* Mesh gradient background exactly like nymo */
+.hero-mesh{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 60% 55% at 20% 30%, rgba(139,92,246,0.35) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 50% at 80% 25%, rgba(236,72,153,0.25) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 50% 80%, rgba(59,130,246,0.2) 0%, transparent 60%),
+    var(--bg);
+  z-index:0;
+}
+.hero-mesh::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 100% 50% at 50% 110%,var(--bg) 40%,transparent 100%);
+}
+
+.hero-content{position:relative;z-index:1;max-width:700px}
+
+.hero-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:100px;
+  padding:8px 18px;
+  font-size:13px;font-weight:500;color:rgba(255,255,255,0.75);
+  margin-bottom:32px;
+  backdrop-filter:blur(10px);
+}
+.hero-pill-dot{width:7px;height:7px;background:var(--purple2);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+
+.hero-discover{
+  font-size:13px;font-weight:700;letter-spacing:5px;text-transform:uppercase;
+  color:rgba(255,255,255,0.4);margin-bottom:12px;
+}
+
+.hero-title{
+  font-size:clamp(56px,10vw,110px);
+  font-weight:800;
+  line-height:1;
+  letter-spacing:-3px;
+  margin-bottom:24px;
+  background:var(--gradtxt);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+
+.hero-tagline{
+  font-size:18px;font-weight:400;
+  color:rgba(255,255,255,0.55);
+  margin-bottom:44px;line-height:1.6;
+  letter-spacing:0.2px;
+}
+
+.hero-chips{
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:center;
+  margin-bottom:72px;
+}
+.hero-chip{
+  display:inline-flex;align-items:center;gap:9px;
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:100px;
+  padding:10px 20px;
+  font-size:13px;font-weight:600;color:var(--txt);
+  backdrop-filter:blur(8px);
+  transition:all .25s;
+  cursor:default;
+}
+.hero-chip:hover{background:rgba(139,92,246,0.2);border-color:rgba(139,92,246,0.4)}
+.hero-chip-icon{font-size:16px}
+
+.hero-scroll{
+  position:absolute;bottom:40px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  color:rgba(255,255,255,0.35);font-size:10px;font-weight:700;
+  letter-spacing:4px;text-transform:uppercase;
+  animation:scrollBounce 2s ease-in-out infinite;
+  z-index:1;
+}
+@keyframes scrollBounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+.hero-scroll svg{width:18px;height:18px;opacity:.5}
+
+/* ─── MARQUEE STRIP ─── */
+.marquee-wrap{
+  background:var(--purple3);
+  padding:14px 0;overflow:hidden;
+  border-top:1px solid rgba(255,255,255,0.1);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+.marquee-track{
+  display:flex;gap:0;
+  animation:marquee 28s linear infinite;
+  width:max-content;
+}
+.marquee-item{
+  font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:rgba(255,255,255,0.85);padding:0 32px;
+  display:flex;align-items:center;gap:16px;white-space:nowrap;
+}
+.marquee-item::after{content:'✦';opacity:.4;font-size:8px}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ─── OVERSIZED TEXT SECTION (nymo style) ─── */
+/* ─── OVERSIZED + PHONE SECTION (nymo style) ─── */
+.oversized-section{
+  background:#eeecea;
+  position:relative;
+  overflow:hidden;
+  padding-top:80px;
+  padding-bottom:90px;
+}
+
+/* The giant text row — phone floats on top of it */
+.oversized-phone-wrap{
+  position:relative;
+  width:100%;
+  height:560px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+/* Full-width oversized text absolutely behind phone */
+.oversized-bg-text{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  pointer-events:none;
+  white-space:nowrap;
+  font-size:clamp(45px,14vw,120px);
+  font-weight:800;
+  color:#0a0c18;
+  letter-spacing:-6px;
+  line-height:1;
+  z-index:1;
+}
+.oversized-bg-text em{
+  font-style:italic;
+  color:#8b5cf6;
+  margin-left:0.2em;
+}
+
+/* Phone mockup floats in centre above the text */
+.phone-mockup{
+  position:relative;
+  z-index:2;
+  width:230px;
+  flex-shrink:0;
+  background:#ffffff;
+  border-radius:40px;
+  border:8px solid #111;
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,.2),
+    0 50px 100px rgba(0,0,0,.28),
+    0 20px 40px rgba(0,0,0,.15);
+  overflow:hidden;
+}
+.phone-notch{
+  width:86px;height:24px;
+  background:#111;
+  border-radius:0 0 16px 16px;
+  margin:0 auto;
+}
+.phone-screen{
+  background:linear-gradient(160deg,#1a0f3c 0%,#2d1b69 45%,#4c1d95 100%);
+  height:440px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:24px 18px 16px;
+  gap:12px;
+}
+/* LawAssist SVG-style logo */
+.phone-logo-wrap{
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+}
+.phone-logo-icon{
+  width:76px;height:76px;
+  background:linear-gradient(135deg,#6d28d9 0%,#8b5cf6 50%,#ec4899 100%);
+  border-radius:22px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 32px rgba(139,92,246,.55),0 0 0 1px rgba(255,255,255,.1);
+  position:relative;overflow:hidden;
+}
+.phone-logo-icon::before{
+  content:'';
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,.25) 0%,transparent 60%);
+}
+.phone-logo-letter{
+  font-size:36px;font-weight:900;
+  color:#fff;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  position:relative;z-index:1;
+  letter-spacing:-2px;
+}
+.phone-app-name{
+  font-size:18px;font-weight:800;color:#fff;
+  letter-spacing:-.4px;font-family:'Plus Jakarta Sans',sans-serif;
+  text-align:center;
+}
+.phone-app-name span{
+  background:linear-gradient(135deg,#c4b5fd,#f9a8d4);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.phone-sub{
+  font-size:10.5px;color:rgba(255,255,255,.45);
+  text-align:center;line-height:1.4;max-width:150px;
+}
+.phone-divider{width:80%;height:1px;background:rgba(255,255,255,.1);margin:2px 0}
+.phone-chips{display:flex;flex-direction:column;gap:6px;width:100%}
+.phone-chip-row{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:10px;padding:8px 12px;
+  display:flex;align-items:center;gap:8px;
+  font-size:10.5px;color:rgba(255,255,255,.75);font-weight:600;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.pcdot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.phone-bar{
+  width:90px;height:4px;background:rgba(255,255,255,.2);
+  border-radius:2px;margin:4px auto 0;
+}
+
+/* Content below phone */
+.oversized-sub{
+  max-width:580px;margin:44px auto 0;
+  text-align:center;
+  font-size:16px;color:#3a3a50;line-height:1.7;
+  padding:0 24px;font-weight:400;
+}
+.oversized-cta-row{
+  display:flex;gap:14px;justify-content:center;
+  margin-top:32px;flex-wrap:wrap;
+}
+.btn-purple{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--purple);color:#fff;
+  padding:14px 28px;border-radius:100px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:14px;font-weight:700;
+  border:none;cursor:pointer;transition:all .25s;
+  text-decoration:none;letter-spacing:.2px;
+}
+.btn-purple:hover{background:#7c3aed;transform:translateY(-2px);box-shadow:0 12px 32px rgba(139,92,246,.35)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  background:transparent;color:#0a0c18;
+  padding:14px 28px;border-radius:100px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:14px;font-weight:600;
+  border:1.5px solid rgba(10,12,24,0.2);cursor:pointer;transition:all .25s;
+  text-decoration:none;
+}
+.btn-ghost:hover{border-color:#8b5cf6;color:#8b5cf6}
+
+/* ─── CHECKER SECTION ─── */
+#checker{background:var(--bg2);padding:100px 24px;position:relative}
+#checker::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--purple),transparent);
+}
+
+.section-center{text-align:center;margin-bottom:56px}
+.section-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;
+  color:var(--purple2);margin-bottom:16px;
+}
+.section-eyebrow::before,.section-eyebrow::after{content:'';display:block;width:24px;height:1px;background:var(--purple2);opacity:.5}
+.section-title{
+  font-size:clamp(32px,4vw,52px);font-weight:800;
+  letter-spacing:-1.5px;line-height:1.05;
+  margin-bottom:14px;
+}
+.section-sub{font-size:15px;color:var(--muted);max-width:460px;margin:0 auto;line-height:1.7;font-weight:400}
+
+.checker-wrap{
+  max-width:820px;margin:0 auto;
+  background:var(--card);
+  border:1px solid var(--bord2);
+  border-radius:20px;overflow:hidden;
+  box-shadow:0 40px 80px rgba(0,0,0,.5),0 0 0 1px rgba(139,92,246,.1);
+}
+.checker-head{
+  padding:32px 40px;
+  background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(236,72,153,.06));
+  border-bottom:1px solid var(--bord);
+  display:flex;align-items:center;gap:16px;
+}
+.checker-head-icon{
+  width:46px;height:46px;border-radius:12px;
+  background:var(--grad);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;
+}
+.checker-head-text h3{font-size:18px;font-weight:700;margin-bottom:3px}
+.checker-head-text p{font-size:13px;color:var(--muted);font-weight:400}
+.checker-body{padding:36px 40px}
+
+.inp-label{display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.situation-ta{
+  width:100%;min-height:120px;
+  padding:16px 18px;
+  border:1.5px solid var(--bord2);border-radius:12px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:15px;color:var(--txt);
+  background:var(--bg3);
+  resize:vertical;transition:border-color .2s;line-height:1.6;
+}
+.situation-ta:focus{outline:none;border-color:var(--purple);background:var(--bg2)}
+.situation-ta::placeholder{color:var(--muted2)}
+
+.chips-label{font-size:12px;color:var(--muted);margin:18px 0 10px;font-weight:500}
+.chips-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.ex-chip{
+  padding:7px 14px;background:var(--bg3);
+  border:1px solid var(--bord2);border-radius:100px;
+  font-size:12px;color:var(--muted);cursor:pointer;transition:all .2s;
+}
+.ex-chip:hover{background:rgba(139,92,246,.2);border-color:rgba(139,92,246,.5);color:var(--lilac);transform:translateY(-1px)}
+
+.analyze-btn{
+  width:100%;padding:16px;
+  background:var(--grad);color:#fff;
+  border:none;border-radius:12px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:15px;font-weight:700;cursor:pointer;
+  transition:all .25s;letter-spacing:.2px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
